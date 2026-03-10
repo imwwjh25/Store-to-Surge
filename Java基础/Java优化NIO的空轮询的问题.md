@@ -21,9 +21,7 @@ Netty 在每次`select()`操作后记录时间戳，并在下一次`select()`前
 
 **关键代码（NioEventLoop.java）**：
 
-java
 
-运行
 
 ```
 private void select(boolean oldWakenUp) throws IOException {
@@ -97,9 +95,6 @@ private void select(boolean oldWakenUp) throws IOException {
 
 **关键代码（NioEventLoop.java）**：
 
-java
-
-运行
 
 ```
 public void rebuildSelector() {
